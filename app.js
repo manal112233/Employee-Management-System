@@ -6,7 +6,8 @@ const session = require('express-session');
 const flash = require('connect-flash');
 
 
-const port=8080;
+const port = process.env.PORT || 8080;
+
 
 // EJS 
 app.set('view engine', 'ejs');
